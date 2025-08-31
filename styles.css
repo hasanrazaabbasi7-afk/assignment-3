@@ -1,0 +1,85 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Section with image background */
+.portfolio-section {
+  background: url('app-develop.jpg') no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay glass effect */
+.overlay {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique; 
+  background: chocolate;
+  backdrop-filter: blur(0.5px);
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: midnightblue;
+  max-width: 1200px;
+  width: 95%;
+}
+
+/* Heading */
+.overlay h1 {
+  font-size: 3rem;
+  color: rgb(143, 221, 225);
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  color: #cfd8dc;
+  margin-bottom: 40px;
+}
+
+/* Portfolio grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Individual card */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 229, 255, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 15px 15px 5px;
+  color: #00e5ff;
+}
+
+.card p {
+  margin: 0 15px 20px;
+  color: #e0f7fa;
+}
